@@ -1,25 +1,25 @@
 {
-    "name": "foxrp/rippled-php",
+    "name": "wjchoi87/rippled-php",
     "description": "A PHP library for communication with rippled. (The XRP Ledger)",
     "keywords": ["library", "composer", "package"],
     "minimum-stability": "stable",
     "license": "MIT",
     "authors": [
         {
-            "name": "Mike Milano",
-            "email": "coder1@gmail.com"
+            "name": "Wonjin Choi",
+            "email": "dwon97@gmail.com"
         }
     ],
     "type": "project",
     "require": {
-		"php": ">=7.1",
+		"php": "^7.3",
         "php-http/client-implementation": "^1.0",
         "php-http/client-common": "^1.7",
         "php-http/discovery": "^1.4",
         "php-http/httplug": "^1.1",
         "psr/http-message": "^1.0",
         "php-http/message-factory": "^1.0",
-        "symfony/process": "^4.1"
+        "symfony/process": "^5.0"
     },
 	"require-dev": {
         "phpunit/phpunit": "^7.1",
