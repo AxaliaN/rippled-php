@@ -68,10 +68,14 @@ class Response
         // Set error data.
         if ($data['result']['status'] === 'error') {
             $this->setError(true);
-            $this->setErrorCode($data['result']['error_code']);
-            $this->setErrorMessage($data['result']['error_message']);
 
-            throw new ResponseErrorException($this->getErrorMessage(), $this->getErrorCode());
+            if(is_null($data['result']['error_message']) || !isset($data['result']['error_message']) || empty($data['result']['error_message'])){
+                $this->setErrorMessage($data['result']['error_exception']);
+            }else{
+                $this->setErrorMessage($data['result']['error_message']);
+            }
+
+            throw new ResponseErrorException($this->getErrorMessage());
         }
     }
 
