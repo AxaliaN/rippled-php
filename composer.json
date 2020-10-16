@@ -1,5 +1,5 @@
 {
-    "name": "AxaliaN/rippled-php",
+    "name": "axalian/rippled-php",
     "description": "A PHP library for communication with rippled. (The XRP Ledger)",
     "keywords": ["library", "composer", "package"],
     "minimum-stability": "stable",
